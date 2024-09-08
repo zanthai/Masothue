@@ -18,7 +18,7 @@ class JsonDBMasothuePipeline:
     
 class CSVDBMasothuePipeline:
     def open_spider(self, spider):
-        self.file = open('csvdataunitop.csv', 'w', encoding='utf-8', newline='')
+        self.file = open('csvdatamasothue.csv', 'w', encoding='utf-8', newline='')
         self.writer = csv.writer(self.file, delimiter=',')
         self.writer.writerow([
             'Ten Cong Ty', 'Ten Quan Tri', 'Ma So Thue', 'Dia Chi', 
